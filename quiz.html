@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./content/lg.png">
+    <meta name="description" content="This is a simple yet interesting quiz on the topic web development">
+    <meta property="og:title" content="dev-quiz" />
+    <meta property="og:description" content="This is a simple yet interesting quiz on the topic web development" />
+    <meta property="og:image" content="./content/lg.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="dev-quiz">
+    <meta name="twitter:description" content="This is a simple yet interesting quiz on the topic web development">
+    <meta name="twitter:image" content="./content/lg.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="dev-quiz">
+    <meta property="og:url" content="https://web-developer-quiz.netlify.app">
+    <title>dev-quiz</title>
+</head>
+
+<body>
+    <!-- This is the main box where all the components will come📦 -->
+    <section class="main">
+        <!-- This is the small box in the center of the screen -->
+        <div class="box">
+
+            <!-- This is the title-->
+            <h1>Tech Quiz</h1>
+            <section class="score">
+                <ion-icon name="bookmark-outline"></ion-icon>Score:
+                <span id="points">0</span>
+                <br>
+                <label for="qnobar">questions done</label>
+                <progress id="qnobar" max="5" value="1"></progress>
+            </section>
+            <section class="q" style="display: flex;">
+                <!-- This is the question -->
+                <span id="question">
+                    1.What is the full-form of CSS?
+                </span>
+                <!-- These are the options -->
+                <section class="options">
+                    <!-- This is the answer ⬇️🎉 -->
+                    <button id="opt1" class="option" onclick="ans()">Cascading Style Sheets</button>
+                    <button id="opt2" class="option" onclick="wrong()">Cascading Style Shaets</button>
+                    <button id="opt3" class="option" onclick="wrong()">Cascade Stystem Sheets</button>
+                    <button id="opt4" class="option" onclick="wrong()">Cascader Style Sheets</button>
+                </section>
+
+            </section>
+        </div>
+
+        <script src="app.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
